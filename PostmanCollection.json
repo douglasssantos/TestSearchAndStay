@@ -18,7 +18,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"value": "{{TesteToken}}",
 									"type": "string"
 								}
 							]
@@ -41,11 +41,10 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8001/api/store/assign/book",
+							"raw": "{{localhost}}/api/store/assign/book",
 							"host": [
-								"localhost"
+								"{{localhost}}"
 							],
-							"port": "8001",
 							"path": [
 								"api",
 								"store",
@@ -64,7 +63,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"value": "{{TesteToken}}",
 									"type": "string"
 								}
 							]
@@ -78,11 +77,10 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:8001/api/store",
+							"raw": "{{localhost}}/api/store",
 							"host": [
-								"localhost"
+								"{{localhost}}"
 							],
-							"port": "8001",
 							"path": [
 								"api",
 								"store"
@@ -99,7 +97,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"value": "{{TesteToken}}",
 									"type": "string"
 								}
 							]
@@ -122,11 +120,10 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8001/api/store",
+							"raw": "{{localhost}}/api/store",
 							"host": [
-								"localhost"
+								"{{localhost}}"
 							],
-							"port": "8001",
 							"path": [
 								"api",
 								"store"
@@ -143,7 +140,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"value": "{{TesteToken}}",
 									"type": "string"
 								}
 							]
@@ -157,11 +154,10 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:8001/api/store/13",
+							"raw": "{{localhost}}/api/store/13",
 							"host": [
-								"localhost"
+								"{{localhost}}"
 							],
-							"port": "8001",
 							"path": [
 								"api",
 								"store",
@@ -179,7 +175,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"value": "{{TesteToken}}",
 									"type": "string"
 								}
 							]
@@ -202,11 +198,10 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8001/api/store/23",
+							"raw": "{{localhost}}/api/store/23",
 							"host": [
-								"localhost"
+								"{{localhost}}"
 							],
-							"port": "8001",
 							"path": [
 								"api",
 								"store",
@@ -229,7 +224,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"value": "{{TesteToken}}",
 									"type": "string"
 								}
 							]
@@ -237,11 +232,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8001/api/book",
+							"raw": "{{localhost}}/api/book",
 							"host": [
-								"localhost"
+								"{{localhost}}"
 							],
-							"port": "8001",
 							"path": [
 								"api",
 								"book"
@@ -258,7 +252,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"value": "{{TesteToken}}",
 									"type": "string"
 								}
 							]
@@ -281,11 +275,10 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8001/api/book/assign/store",
+							"raw": "{{localhost}}/api/book/assign/store",
 							"host": [
-								"localhost"
+								"{{localhost}}"
 							],
-							"port": "8001",
 							"path": [
 								"api",
 								"book",
@@ -304,7 +297,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"value": "{{TesteToken}}",
 									"type": "string"
 								}
 							]
@@ -327,11 +320,10 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8001/api/book",
+							"raw": "{{localhost}}/api/book",
 							"host": [
-								"localhost"
+								"{{localhost}}"
 							],
-							"port": "8001",
 							"path": [
 								"api",
 								"book"
@@ -348,7 +340,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"value": "{{TesteToken}}",
 									"type": "string"
 								}
 							]
@@ -371,11 +363,10 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8001/api/book/32",
+							"raw": "{{localhost}}/api/book/32",
 							"host": [
-								"localhost"
+								"{{localhost}}"
 							],
-							"port": "8001",
 							"path": [
 								"api",
 								"book",
@@ -393,7 +384,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"value": "{{TesteToken}}",
 									"type": "string"
 								}
 							]
@@ -407,11 +398,10 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:8001/api/book/31",
+							"raw": "{{localhost}}/api/book/31",
 							"host": [
-								"localhost"
+								"{{localhost}}"
 							],
-							"port": "8001",
 							"path": [
 								"api",
 								"book",
@@ -428,6 +418,19 @@
 			"item": [
 				{
 					"name": "User Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"TesteToken\", pm.response.json().data.access_token);\r",
+									"console.log(\"Recovered Token: \", pm.response.json().data.access_token);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"request": {
 						"method": "POST",
 						"header": [
@@ -447,11 +450,10 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8001/api/auth",
+							"raw": "{{localhost}}/api/auth",
 							"host": [
-								"localhost"
+								"{{localhost}}"
 							],
-							"port": "8001",
 							"path": [
 								"api",
 								"auth"
@@ -468,7 +470,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"value": "{{TesteToken}}",
 									"type": "string"
 								}
 							]
@@ -482,11 +484,10 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:8001/api/auth",
+							"raw": "{{localhost}}/api/auth",
 							"host": [
-								"localhost"
+								"{{localhost}}"
 							],
-							"port": "8001",
 							"path": [
 								"api",
 								"auth"
