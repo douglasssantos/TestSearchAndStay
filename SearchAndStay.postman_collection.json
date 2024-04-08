@@ -1,0 +1,501 @@
+{
+	"info": {
+		"_postman_id": "118c1493-5120-4da7-acff-8afaf0d8bd66",
+		"name": "SearchAndStay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26639091",
+		"_collection_link": "https://planetary-water-579721.postman.co/workspace/Team-Workspace~6b0c9686-2361-4724-854d-869de16e278b/collection/26639091-118c1493-5120-4da7-acff-8afaf0d8bd66?action=share&source=collection_link&creator=26639091"
+	},
+	"item": [
+		{
+			"name": "Store",
+			"item": [
+				{
+					"name": "Assign Book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"store_id\": 19,\r\n    \"books_id\": [1,15]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/store/assign/book",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"store",
+								"assign",
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Stores",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8001/api/store",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"store"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Store",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Our Health Bookstore\",\r\n    \"active\": true,\r\n    \"address\": {\r\n        \"street\": \"Main Street\",\r\n        \"number\": 5364,\r\n        \"complement\": \"\",\r\n        \"district\": \"Downtown\",\r\n        \"city\": \"Cityville\",\r\n        \"state\": \"California\",\r\n        \"postal_code\": \"12345478\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/store",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"store"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Store",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8001/api/store/13",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"store",
+								"13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Store",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Our's Health Bookstore\",\r\n    \"active\": false,\r\n    \"address\": {\r\n        \"street\": \"Main Street\",\r\n        \"number\": 536423,\r\n        \"complement\": \"\",\r\n        \"district\": \"Downtown\",\r\n        \"city\": \"Cityville\",\r\n        \"state\": \"California\",\r\n        \"postal_code\": \"12345478\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/store/23",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"store",
+								"23"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "Get All Books",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/api/book",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Assign To Store",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"book_id\": 8,\r\n    \"stores_id\": [1,9,13]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/book/assign/store",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"book",
+								"assign",
+								"store"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Clean Code - Kristian Nock\",\r\n    \"isbn\": 998547856985,\r\n    \"price\": 65.25\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/book",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Clean Code - Kristian Varistan\",\r\n    \"isbn\": 798547856985,\r\n    \"price\": 45.25\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/book/32",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"book",
+								"32"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8001/api/book/31",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"book",
+								"31"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "User Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test@test.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/auth",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|cOTmgvXFy1p393T7ZDrbMd6lJurDHekt7O1hOQF6f46b59f2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8001/api/auth",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"auth"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

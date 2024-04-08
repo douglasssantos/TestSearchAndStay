@@ -4,8 +4,9 @@ use Illuminate\Support\Facades\Route;
 
 use App\Store\StoreController;
 
-Route::controller(StoreController::class)
-->name("store.")->prefix("store")->group(function (){
+Route::middleware('auth:sanctum')
+->controller(StoreController::class)->name("store.")
+->prefix("store")->group(function (){
 
     Route::get("/", 'getAll');
     Route::post("/", 'create');

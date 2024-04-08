@@ -13,7 +13,7 @@ class Book extends Model
     protected $guarded = ['id'];
 
     protected $casts = [
-        'price' => 'decimal:10'
+        'price' => 'decimal:2'
     ];
 
     public function stores()
